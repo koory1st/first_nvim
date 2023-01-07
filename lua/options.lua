@@ -3,6 +3,10 @@ local g = vim.g       -- Global variables
 local opt = vim.opt   -- Set options (global/buffer/windows-scoped)
 
 
+-- example using a list of specs with the default options
+vim.g.mapleader = " " -- make sure to set `mapleader` before lazy so your mappings are correct
+
+opt.timeoutlen = 100
 
 -----------------------------------------------------------
 -- General

@@ -1,38 +1,20 @@
------------------------------------------------------------
--- Define keymaps of Neovim and installed plugins.
------------------------------------------------------------
-
-local function map(mode, lhs, rhs, opts)
-  local options = { noremap=true, silent=true }
-  if opts then
-    options = vim.tbl_extend('force', options, opts)
-  end
-  vim.api.nvim_set_keymap(mode, lhs, rhs, options)
-end
-
--- Change leader to a comma
-vim.g.mapleader = ' '
-
-
--- Disable arrow keys
-map('', '<up>', '<nop>')
-map('', '<down>', '<nop>')
-map('', '<left>', '<nop>')
-map('', '<right>', '<nop>')
-
-
--- Move around splits using Ctrl + {h,j,k,l}
-map('n', '<C-h>', '<C-w>h')
-map('n', '<C-j>', '<C-w>j')
-map('n', '<C-k>', '<C-w>k')
-map('n', '<C-l>', '<C-w>l')
-
--- Reload configuration without restart nvim
-map('n', '<leader>r', ':so %<CR>')
-
--- Fast saving with <leader> and s
-map('n', '<leader>s', ':w<CR>')
-
--- Close all windows and exit from Neovim with <leader> and q
-map('n', '<leader>q', ':qa!<CR>')
-
+return {
+    ["<leader>"] = {
+        f = {
+            name = "+file",
+            f = { "<cmd>Telescope find_files<cr>", "Find File" },
+            r = { "<cmd>Telescope oldfiles<cr>", "Open Recent File" },
+            n = { "<cmd>enew<cr>", "New File" },
+        },
+        e = {"<cmd>NvimTreeToggle<cr>", "Toggle Tree"},
+        w = {"<cmd>w<cr>", "Save"},
+        r = {"<cmd>so %<cr>", "Reload"},
+        q = {"<cmd>qa!<cr>", "Quit Force"},
+    },	
+    ["<c-h>"] = {"<c-w>h", "focus left"},
+    ["<c-l>"] = {"<c-w>l", "focus right"},
+    ["<c-j>"] = {"<c-w>j", "focus down"},
+    ["<c-k>"] = {"<c-w>k", "focus up"},
+    ["f"] = {"<cmd>HopChar1AC<cr>", "Hop AC"},
+    ["F"] = {"<cmd>HopChar1BC<cr>", "Hop BC"},
+}
