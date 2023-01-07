@@ -10,6 +10,11 @@ return {
         w = {"<cmd>w<cr>", "Save"},
         r = {"<cmd>so %<cr>", "Reload"},
         q = {"<cmd>qa!<cr>", "Quit Force"},
+        b = {
+            name = "+buffer",
+            c = {"<cmd>BufferClose<cr>", "buffer close"},
+            p = {"<cmd>BufferPick<cr>", "buffer pick"},
+        },
     },	
     ["<c-h>"] = {"<c-w>h", "focus left"},
     ["<c-l>"] = {"<c-w>l", "focus right"},
@@ -17,4 +22,7 @@ return {
     ["<c-k>"] = {"<c-w>k", "focus up"},
     ["f"] = {"<cmd>HopChar1AC<cr>", "Hop AC"},
     ["F"] = {"<cmd>HopChar1BC<cr>", "Hop BC"},
+    ["<A-,>"] = {"<cmd>BufferPrevious<cr>", "Buffer Prev"},
+    ["<a-.>"] = {"<cmd>BufferNext<cr>", "Buffer Next"},
+
 }
