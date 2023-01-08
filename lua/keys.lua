@@ -1,10 +1,16 @@
+
 return {
     ["<leader>"] = {
         f = {
-            name = "+file",
+            name = "+find",
             f = { "<cmd>Telescope find_files<cr>", "Find File" },
             r = { "<cmd>Telescope oldfiles<cr>", "Open Recent File" },
+            w = { "<cmd>Telescope live_grep<cr>", "Find Word" },
             n = { "<cmd>enew<cr>", "New File" },
+        },
+        s = {
+            name = "+search",
+            c = { "<cmd>Telescope commands<cr>", "Commands" },
         },
         e = {"<cmd>NvimTreeToggle<cr>", "Toggle Tree"},
         w = {"<cmd>w<cr>", "Save"},
