@@ -10,25 +10,49 @@ return {
     require 'plugin-config.barbecue',
     require 'plugin-config.lualine',
     require 'plugin-config.barbar',
-    require 'plugin-config.mini-animate',
+--    require 'plugin-config.mini-animate',
     require 'plugin-config.lsconfig',
     require 'plugin-config.mason',
     require 'plugin-config.mason-lspconfig',
     require 'plugin-config.nvim-lspconfig',
     require 'plugin-config.telescope',
+    require 'plugin-config.cmp',
+    require 'plugin-config.rust-tools',
 
-        -- Completion framework:
-    'hrsh7th/nvim-cmp',
+    -- Completion framework:
 
-    -- LSP completion source:
-    'hrsh7th/cmp-nvim-lsp',
+    {
+        -- LSP completion source:
+        'hrsh7th/cmp-nvim-lsp',
+        lazy = false,
+
+    },
 
     -- Useful completion sources:
-    'hrsh7th/cmp-nvim-lua',
-    'hrsh7th/cmp-nvim-lsp-signature-help',
-    'hrsh7th/cmp-vsnip',
-    'hrsh7th/cmp-path',
-    'hrsh7th/cmp-buffer',
-    'hrsh7th/vim-vsnip',
+    {
+        'hrsh7th/cmp-nvim-lua',
+        lazy = false,
+    },
+    {
+        'hrsh7th/cmp-nvim-lsp-signature-help',
+        lazy = false,
+    },
+    {
+        'hrsh7th/cmp-vsnip',
+        lazy = false,
+    },
+    {
+        'hrsh7th/cmp-path',
+        lazy = false,
+    },
+    {
+        'hrsh7th/cmp-buffer',
+        lazy = false,
+    },
+    {
+        'hrsh7th/vim-vsnip',
+        lazy = false,
+    },
 
+    require 'plugin-config.nvim-treesitter'
 }
