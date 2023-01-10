@@ -55,5 +55,6 @@ return {
     },
 
     require 'plugin-config.nvim-treesitter',
-    require 'plugin-config.nvim-dap'
+    require 'plugin-config.nvim-dap',
+    require 'plugin-config.nvim-dap-ui',
 }
