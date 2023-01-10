@@ -58,4 +58,7 @@ return {
     require 'plugin-config.nvim-dap',
     require 'plugin-config.nvim-dap-ui',
     require 'plugin-config.fidget',
+    require 'plugin-config.symbols-outline',
+    require 'plugin-config.numb',
+    require 'plugin-config.telescope-hop',
 }

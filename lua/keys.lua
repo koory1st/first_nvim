@@ -30,4 +30,10 @@ return {
     ["<A-,>"] = {"<cmd>BufferPrevious<cr>", "Buffer Prev"},
     ["<a-.>"] = {"<cmd>BufferNext<cr>", "Buffer Next"},
 
+    -- dap debug
+    ["<F5>"] = {"<cmd>DapContinue<cr>", "Debugger: Start"},
+    -- shift + f5
+    ["<F17>"] = {"<cmd>DapTerminate<cr>", "Debugger: Stop"},
+    ["<F9>"] = {"<cmd>DapToggleBreakpoint<cr>", "Debugger: Toggle Breakpoint"},
+
 }
