@@ -54,5 +54,6 @@ return {
         lazy = false,
     },
 
-    require 'plugin-config.nvim-treesitter'
+    require 'plugin-config.nvim-treesitter',
+    require 'plugin-config.nvim-dap'
 }
