@@ -20,6 +20,13 @@ return {
             c = {"<cmd>BufferClose<cr>", "buffer close"},
             p = {"<cmd>BufferPick<cr>", "buffer pick"},
         },
+        l = {
+            name = "+lsp",
+            r = {function() require("telescope.builtin").lsp_references() end, "References"},
+            R = {function() vim.lsp.buf.rename() end, "Rename"},
+            d = {function() require("telescope.builtin").lsp_definitions() end, "Definitions"},
+            i = {function() require("telescope.builtin").lsp_implementations() end, "Implementation"},
+        },
     },	
     ["<c-h>"] = {"<c-w>h", "focus left"},
     ["<c-l>"] = {"<c-w>l", "focus right"},
