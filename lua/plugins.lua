@@ -19,40 +19,6 @@ return {
     require 'plugin-config.cmp',
     require 'plugin-config.rust-tools',
 
-    -- Completion framework:
-
-    {
-        -- LSP completion source:
-        'hrsh7th/cmp-nvim-lsp',
-        lazy = false,
-
-    },
-
-    -- Useful completion sources:
-    {
-        'hrsh7th/cmp-nvim-lua',
-        lazy = false,
-    },
-    {
-        'hrsh7th/cmp-nvim-lsp-signature-help',
-        lazy = false,
-    },
-    {
-        'hrsh7th/cmp-vsnip',
-        lazy = false,
-    },
-    {
-        'hrsh7th/cmp-path',
-        lazy = false,
-    },
-    {
-        'hrsh7th/cmp-buffer',
-        lazy = false,
-    },
-    {
-        'hrsh7th/vim-vsnip',
-        lazy = false,
-    },
 
     require 'plugin-config.nvim-treesitter',
     require 'plugin-config.nvim-dap',
@@ -61,4 +27,5 @@ return {
     require 'plugin-config.symbols-outline',
     require 'plugin-config.numb',
     require 'plugin-config.telescope-hop',
+    require 'plugin-config.comment',
 }
