@@ -28,4 +28,5 @@ return {
     require 'plugin-config.numb',
     require 'plugin-config.telescope-hop',
     require 'plugin-config.comment',
+    require 'plugin-config.nvim-treesitter-context',
 }
