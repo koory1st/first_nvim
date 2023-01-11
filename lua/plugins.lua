@@ -33,4 +33,5 @@ return {
     require 'plugin-config.nvim-test',
     require 'plugin-config.hlargs',
     require 'plugin-config.indent-blankline',
+    require 'plugin-config.vim-illuminate',
 }
