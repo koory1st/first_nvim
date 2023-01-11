@@ -32,4 +32,5 @@ return {
     require 'plugin-config.twilight',
     require 'plugin-config.nvim-test',
     require 'plugin-config.hlargs',
+    require 'plugin-config.indent-blankline',
 }
