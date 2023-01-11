@@ -30,4 +30,5 @@ return {
     require 'plugin-config.comment',
     require 'plugin-config.nvim-treesitter-context',
     require 'plugin-config.twilight',
+    require 'plugin-config.nvim-test',
 }
