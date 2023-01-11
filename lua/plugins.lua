@@ -31,4 +31,5 @@ return {
     require 'plugin-config.nvim-treesitter-context',
     require 'plugin-config.twilight',
     require 'plugin-config.nvim-test',
+    require 'plugin-config.hlargs',
 }
