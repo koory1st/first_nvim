@@ -26,6 +26,8 @@ return {
             R = {function() vim.lsp.buf.rename() end, "Rename"},
             d = {function() require("telescope.builtin").lsp_definitions() end, "Definitions"},
             i = {function() require("telescope.builtin").lsp_implementations() end, "Implementation"},
+            f = {function() require'telescope'.extensions.dap.frames{} end, "frames"},
+            b = {function() require'telescope'.extensions.dap.list_breakpoints{} end, "List Breakpoint"},
         },
     },	
     ["<c-h>"] = {"<c-w>h", "focus left"},
