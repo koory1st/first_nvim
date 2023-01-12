@@ -35,4 +35,5 @@ return {
     require 'plugin-config.indent-blankline',
     require 'plugin-config.vim-illuminate',
     require 'plugin-config.trouble',
+    require 'plugin-config.neodev',
 }
