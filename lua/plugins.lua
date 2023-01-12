@@ -36,4 +36,5 @@ return {
     require 'plugin-config.vim-illuminate',
     require 'plugin-config.trouble',
     require 'plugin-config.neodev',
+    require 'plugin-config.nvim-dap-virtual-text',
 }
