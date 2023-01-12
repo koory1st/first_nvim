@@ -43,7 +43,7 @@ return {
     ["<F5>"] = {"<cmd>DapContinue<cr>", "Debugger: Start"},
     -- shift + f5
     ["<F17>"] = {"<cmd>DapTerminate<cr>", "Debugger: Stop"},
-    ["<F9>"] = {"<cmd>DapToggleBreakpoint<cr>", "Debugger: Toggle Breakpoint"},
+    ["<F9>"] = {"<cmd>lua require('persistent-breakpoints.api').toggle_breakpoint()<cr>", "Debugger: Toggle Breakpoint"},
     ["<F10>"] = {"<cmd>DapStepOver<cr>", "Debugger: Step Over"},
     ["<F11>"] = {"<cmd>DapStepIn<cr>", "Debugger: Step In"},
 

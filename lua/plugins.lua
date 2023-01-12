@@ -38,4 +38,5 @@ return {
     require 'plugin-config.neodev',
     require 'plugin-config.nvim-dap-virtual-text',
     require 'plugin-config.telescope-dap',
+    require 'plugin-config.persistent-breakpoints',
 }
