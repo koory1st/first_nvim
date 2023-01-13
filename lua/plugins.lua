@@ -39,4 +39,7 @@ return {
     require 'plugin-config.nvim-dap-virtual-text',
     require 'plugin-config.telescope-dap',
     require 'plugin-config.persistent-breakpoints',
+    require 'plugin-config.mini-surround',
+    require 'plugin-config.mason-nvim-dap',
+    require 'plugin-config.null-ls',
 }
