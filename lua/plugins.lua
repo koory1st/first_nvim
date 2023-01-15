@@ -42,4 +42,5 @@ return {
     require 'plugin-config.mini-surround',
     require 'plugin-config.mason-nvim-dap',
     require 'plugin-config.null-ls',
+    require 'plugin-config.beacon',
 }
